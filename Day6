@@ -1,0 +1,8 @@
+COMBINE TWO TABLES 175
+
+SOLUTION
+
+SELECT p.firstName,p.lastName,s.city,s.state
+FROM Person p
+LEFT JOIN address s 
+ON p.personId = s.personId;
